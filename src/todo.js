@@ -1,3 +1,4 @@
+const todoArray = [];
 class Todo {
   constructor(title, description, priotiry) {
     this.title = title;
@@ -14,8 +15,10 @@ class Todo {
   }
 }
 
-function addTodo(title, description, priotiry) {
-  todoArray.push(new Todo(title, description, priotiry));
+function addTodo(project, title, description, priotiry) {
+  const todoObject = new Todo(title, description, priotiry);
+  project.todoArray.push(todoObject);
+  todoArray.push(todoObject);
 }
 
-export { addTodo };
+export { addTodo, todoArray };

@@ -1,3 +1,3 @@
 import "./styles.css";
-import { addTodo } from "./todo";
+import { addTodo, todoArray } from "./todo";
 import { Project } from "./project.js";
